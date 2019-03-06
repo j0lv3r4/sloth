@@ -16,7 +16,7 @@ from bottle import (
     abort,
 )
 from bottle.ext import sqlalchemy
-form app.config import DOMAIN
+from app.config import DOMAIN
 from app.models import engine, Base, User
 from app.utils import create_key_pair, get_webfinger
 from app.auth import sign_up
